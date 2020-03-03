@@ -8,3 +8,9 @@ for items in addr_elements:
     for elements in items.childNodes :
         if elements.childNodes:
             elements.childNodes[0].data = "address"
+
+#toconvert family name
+action_code = xmldoc.getElementsByTagName('family')
+for i in action_code:
+    c = i.childNodes
+    c[0].data = "Patient Family Name"
