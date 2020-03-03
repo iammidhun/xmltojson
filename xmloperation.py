@@ -1,5 +1,5 @@
 from xml.dom import minidom
-xmldoc = minidom.parse('Downloads/sample.xml')
+xmldoc = minidom.parse('sample.xml')
 
 #getting elements of address
 addr_elements = xmldoc.getElementsByTagName('addr')
@@ -14,8 +14,10 @@ family_elements = xmldoc.getElementsByTagName('family')
 for items in family_elements:
     elements = items.childNodes
     elements[0].data = "Patient Family Name"
-
+#to convert patient name
 person_elementss = xmldoc.getElementsByTagName('given')
 for items in action_code:
     elements = i.childNodes
     elements[0].data = "Patient Name"
+
+
