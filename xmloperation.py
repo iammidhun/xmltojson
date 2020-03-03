@@ -10,7 +10,12 @@ for items in addr_elements:
             elements.childNodes[0].data = "address"
 
 #toconvert family name
-action_code = xmldoc.getElementsByTagName('family')
-for i in action_code:
-    c = i.childNodes
-    c[0].data = "Patient Family Name"
+family_elements = xmldoc.getElementsByTagName('family')
+for items in family_elements:
+    elements = items.childNodes
+    elements[0].data = "Patient Family Name"
+
+person_elementss = xmldoc.getElementsByTagName('given')
+for items in action_code:
+    elements = i.childNodes
+    elements[0].data = "Patient Name"
